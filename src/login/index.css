@@ -1,0 +1,242 @@
+@import url(./assets/fonts/geist/index.css);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --text-50: #eff2f6;
+        --text-100: #dee4ed;
+        --text-200: #bec9da;
+        --text-300: #9daec8;
+        --text-400: #7c93b6;
+        --text-500: #5c78a3;
+        --text-600: #496083;
+        --text-700: #374862;
+        --text-800: #253041;
+        --text-900: #121821;
+        --text-950: #090c10;
+
+        --background-50: #edf1f7;
+        --background-100: #dce4ef;
+        --background-200: #b9c8df;
+        --background-300: #95add0;
+        --background-400: #7291c0;
+        --background-500: #4f76b0;
+        --background-600: #3f5e8d;
+        --background-700: #2f476a;
+        --background-800: #202f46;
+        --background-900: #101823;
+        --background-950: #080c12;
+
+        --primary-50: #ecf1f8;
+        --primary-100: #dae2f1;
+        --primary-200: #b4c6e4;
+        --primary-300: #8fa9d6;
+        --primary-400: #698cc9;
+        --primary-500: #4470bb;
+        --primary-600: #365996;
+        --primary-700: #294370;
+        --primary-800: #1b2d4b;
+        --primary-900: #0e1625;
+        --primary-950: #070b13;
+
+        --secondary-50: #ebf0fa;
+        --secondary-100: #d7e2f4;
+        --secondary-200: #afc4e9;
+        --secondary-300: #87a7de;
+        --secondary-400: #5f89d3;
+        --secondary-500: #376cc8;
+        --secondary-600: #2c56a0;
+        --secondary-700: #214178;
+        --secondary-800: #162b50;
+        --secondary-900: #0b1628;
+        --secondary-950: #050b14;
+
+        --accent-50: #eaf0fb;
+        --accent-100: #d5e1f6;
+        --accent-200: #aac3ee;
+        --accent-300: #80a5e5;
+        --accent-400: #5687dc;
+        --accent-500: #2b69d4;
+        --accent-600: #2354a9;
+        --accent-700: #1a3f7f;
+        --accent-800: #112a55;
+        --accent-900: #09152a;
+        --accent-950: #040b15;
+    }
+
+    .dark {
+        --text-50: #090c10;
+        --text-100: #121821;
+        --text-200: #243042;
+        --text-300: #364863;
+        --text-400: #486084;
+        --text-500: #5b78a4;
+        --text-600: #7b93b7;
+        --text-700: #9caec9;
+        --text-800: #bdc9db;
+        --text-900: #dee4ed;
+        --text-950: #eff2f6;
+
+        --background-50: #080c12;
+        --background-100: #101823;
+        --background-200: #202f46;
+        --background-300: #2f476a;
+        --background-400: #3f5e8d;
+        --background-500: #4f76b0;
+        --background-600: #7291c0;
+        --background-700: #95add0;
+        --background-800: #b9c8df;
+        --background-900: #dce4ef;
+        --background-950: #edf1f7;
+
+        --primary-50: #070b13;
+        --primary-100: #0e1625;
+        --primary-200: #1b2d4b;
+        --primary-300: #294370;
+        --primary-400: #365996;
+        --primary-500: #4470bb;
+        --primary-600: #698cc9;
+        --primary-700: #8fa9d6;
+        --primary-800: #b4c6e4;
+        --primary-900: #dae2f1;
+        --primary-950: #ecf1f8;
+
+        --secondary-50: #050b14;
+        --secondary-100: #0b1628;
+        --secondary-200: #162b50;
+        --secondary-300: #214178;
+        --secondary-400: #2c56a0;
+        --secondary-500: #376cc8;
+        --secondary-600: #5f89d3;
+        --secondary-700: #87a7de;
+        --secondary-800: #afc4e9;
+        --secondary-900: #d7e2f4;
+        --secondary-950: #ebf0fa;
+
+        --accent-50: #040b15;
+        --accent-100: #09152a;
+        --accent-200: #112a55;
+        --accent-300: #1a3f7f;
+        --accent-400: #2354a9;
+        --accent-500: #2b69d4;
+        --accent-600: #5687dc;
+        --accent-700: #80a5e5;
+        --accent-800: #aac3ee;
+        --accent-900: #d5e1f6;
+        --accent-950: #eaf0fb;
+    }
+}
+
+body.kcBodyClass {
+    @apply bg-[url(./assets/img/background.jpg)] bg-no-repeat bg-center bg-fixed;
+    @apply font-geist;
+}
+
+.kcHeaderWrapperClass {
+    @apply text-3xl font-bold underline;
+}
+
+.glassmorphism {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.glassmorphism2 {
+    background: rgba(131, 131, 131, 0.04);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.glassmorphism3 {
+    ::after {
+        background: rgba(131, 131, 131, 0.04);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+}
+
+.btn-styled {
+    @apply text-white font-semibold py-2 px-4 rounded-md;
+    background: var(--accent-200) !important;
+    background-color: var(--accent-200) !important;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        background: var(--accent-300) !important;
+        background-color: var(--accent-300) !important;
+    }
+}
+
+.footer {
+    background: rgba(131, 131, 131, 0.04) !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
+    * {
+        color: var(--text-100) !important;
+        font-size: 0.9rem;
+    }
+
+    a {
+        > div {
+            transition: all 0.2s ease-in-out;
+        }
+
+        &:hover {
+            > div {
+                color: #fff !important;
+            }
+        }
+    }
+}
+
+.text-primary-important {
+    color: var(--text-200) !important;
+}
+
+.dropdown {
+    overflow-y: scroll;
+    max-height: 250px;
+    position: absolute;
+    @apply rounded-md;
+}
+
+.hover-bright {
+    transition: all 0.2s ease-in-out;
+    color: var(--text-200) !important;
+    &:hover {
+        color: unset;
+        filter: brightness(1.2);
+    }
+}
+
+.all-text-200 {
+    * {
+        color: var(--text-200) !important;
+    }
+}
+
+.input-styled {
+    @apply rounded-md transition-all duration-150 ease-in-out outline-transparent border-0 text-primary-100;
+
+    background: rgba(131, 131, 131, 0.04);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
